@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inscription</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Inscriptions web white</h2>
+  <form id="registrationForm">
+    <label for="firstName">Nom:</label>
+    <input type="text" id="firstName" name="firstName" required>
+
+    <label for="lastName">Prénom:</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <label for="contact">Email ou Téléphone:</label>
+    <input type="text" id="contact" name="contact" required>
+
+    <label for="birthDate">Date de naissance:</label>
+    <input type="date" id="birthDate" name="birthDate" required>
+
+    <label for="country">Pays:</label>
+    <select id="country" name="country">
+      <option value="">--Choisissez un pays--</option>
+      </select>
+
+    <label for="password">Mot de passe:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="confirmPassword">Confirmer le mot de passe:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+    <button type="button" onclick="register()">S'inscrire</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
